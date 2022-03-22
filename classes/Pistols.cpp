@@ -1,9 +1,10 @@
 #include "Pistols.h"
+#include <iostream>
+
+Pistol::Pistol() {}
 
 
-Pistol::Pistol()
+void Pistol::Attacking()
 {
-	SetCaliber(6.0);
-	SetDamage(60);
-	SetRadiusPor(200);
+	std::cout << "You're shooting with pistol " << this << std::endl;
 }

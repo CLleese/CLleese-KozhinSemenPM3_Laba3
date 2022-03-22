@@ -1,12 +1,11 @@
 #pragma once
 #include "ColdWeapon.h"
-class StabbingWeapon :	public ColdWeapon
+class CuttingWeapon : public ColdWeapon
 {
 public:
 
-	StabbingWeapon();
+	CuttingWeapon();
 
 	virtual void Attacking();
-
 };
 

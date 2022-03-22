@@ -5,6 +5,8 @@ class Pistol : public FireWeapon
 {
 public:
 	Pistol();
+
+	virtual void Attacking();
 	
 
 protected:

@@ -3,6 +3,8 @@ class Weapon
 {
 public: 
 
+	virtual void Attacking();
+
 	bool isColdWeapon();
 
 	int GetDamage();

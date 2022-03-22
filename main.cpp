@@ -1,14 +1,25 @@
-﻿//#include "classes/FireWeapon.h"
+﻿
 #include "classes/Pistols.h"
-#include <iostream>
+#include "classes/CuttingWeapon.h"
+#include "classes/FireWeapon.h"
+#include "classes/SetOfGuns.h"
 
-
-using namespace std;
 
 int main()
 {
+	CuttingWeapon sword;
 	Pistol makarov;
-	cout << makarov.GetFireMod();
+
+	FireWeapon bazooka(100000, 2000, 50);
+	
+
+	SetOfGuns set;
+
+	set.AddWeapon(&sword);
+	set.AddWeapon(&makarov);
+	set.AddWeapon(&bazooka);
+
+	set.Print();
 
 	return 0;
 }

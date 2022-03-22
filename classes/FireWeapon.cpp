@@ -1,4 +1,5 @@
 #include "FireWeapon.h"
+#include <iostream>
 
 FireWeapon::FireWeapon()
 {
@@ -12,6 +13,11 @@ FireWeapon::FireWeapon(int _damage, int _radiusPor, float _caliber)
 	SetCaliber(_caliber);
 	SetDamage(_damage);
 	SetRadiusPor(_radiusPor);
+}
+
+void FireWeapon::Attacking()
+{
+	std::cout << "You're shooting with " << this << std::endl;
 }
 
 bool FireWeapon::isColdWeapon()

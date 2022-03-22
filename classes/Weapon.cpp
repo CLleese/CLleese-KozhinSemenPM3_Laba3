@@ -1,5 +1,12 @@
 #include "Weapon.h"
+#include <iostream>
 
+void Weapon::Attacking()
+{
+
+	std::cout << "You're attacked with " << this << std::endl;
+
+}
 
 bool Weapon::isColdWeapon()
 {
