@@ -1,12 +1,14 @@
-﻿#include "FireWeapon.h"
-#include "ColdWeapon.h"
+﻿//#include "classes/FireWeapon.h"
+#include "classes/Pistols.h"
 #include <iostream>
+
 
 using namespace std;
 
 int main()
 {
-	ColdWeapon knife(50, 1, 0.3);
+	Pistol makarov;
+	cout << makarov.GetFireMod();
 
-	cout << knife.isColdWeapon() << " урон = " << knife.GetDamage() + knife.GetRadiusPor() - knife.GetBladeLen();
+	return 0;
 }
